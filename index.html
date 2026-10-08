@@ -1,70 +1,712 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="سوقك السودان - خدمات الترويج والتسويق على المواقع الإلكترونية ووسائل التواصل الاجتماعي" />
-  <title>سوقك السودان | Sougk alsudan</title>
-  <style>
-    *{box-sizing:border-box}
-    body{margin:0;font-family:Tahoma,Arial,sans-serif;background:#f5f7fa;color:#17202a;line-height:1.8}
-    .wrap{max-width:980px;margin:auto;padding:24px}
-    .hero{background:#fff;border-radius:18px;padding:34px;box-shadow:0 10px 30px rgba(0,0,0,.06);margin-top:28px}
-    .brand{font-size:34px;font-weight:700;margin:0 0 6px}
-    .en{direction:ltr;text-align:right;color:#52606d}
-    .tag{display:inline-block;margin-top:12px;padding:7px 12px;border-radius:999px;background:#eef3f8;font-size:14px}
-    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:24px}
-    .card{background:#fff;border-radius:16px;padding:22px;box-shadow:0 8px 24px rgba(0,0,0,.05)}
-    .card h2{margin:0 0 14px;font-size:20px}
-    .row{padding:9px 0;border-bottom:1px solid #edf0f3}.row:last-child{border-bottom:0}
-    .label{font-weight:700} a{color:inherit}
-    footer{text-align:center;color:#6b7280;padding:28px 0 12px;font-size:14px}
-    @media(max-width:700px){.grid{grid-template-columns:1fr}.hero{padding:24px}.brand{font-size:28px}}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>مؤسسة سوقك | Sougk llc</title>
+
+<meta name="description" content="مؤسسة سوقك، مؤسسة سوقك للخدمات الرقمية والتسويق الإلكتروني والتجارة الإلكترونية والإعلانات الرقمية.">
+<meta name="application-name" content="مؤسسة سوقك">
+
+<meta name="facebook-domain-verification" content="8v333ecjhlqzab9a3hf2ybv5k4hdqg" />
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #eeeeee;
+    color: #222;
+    font-family: Arial, Tahoma, sans-serif;
+}
+
+.page {
+    max-width: 1050px;
+    min-height: 1400px;
+    margin: 25px auto;
+    padding: 25px;
+    background: white;
+    box-shadow: 0 5px 25px #00000018;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr 1fr;
+    gap: 15px;
+    align-items: center;
+    border-bottom: 2px solid #ddd;
+    padding: 15px 5px 20px;
+}
+
+.header-left {
+    text-align: left;
+    direction: ltr;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.header-center {
+    text-align: center;
+}
+
+.brand {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+}
+
+.brand-icon {
+    color: #079fc4;
+}
+
+.brand-en {
+    direction: ltr;
+    font-size: 16px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.header-right {
+    text-align: right;
+    font-size: 13px;
+    color: #842626;
+    line-height: 1.8;
+}
+
+.company-banner {
+    margin-top: 20px;
+    padding: 20px;
+    background: #fafafa;
+    border: 1px dashed #aaa;
+    text-align: center;
+}
+
+.company-banner h1 {
+    font-size: 28px;
+    margin: 0;
+}
+
+.company-banner p {
+    margin: 8px 0 0;
+    direction: ltr;
+    color: #666;
+}
+
+.activities {
+    margin-top: 20px;
+    border: 1px solid #bbb;
+}
+
+.activities-title {
+    background: #08a4cb;
+    color: white;
+    padding: 13px;
+    text-align: center;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.activities-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    padding: 18px;
+    background: #fafafa;
+}
+
+.activity {
+    padding: 13px;
+    border: 1px dashed #aaa;
+    background: white;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.activity.primary {
+    grid-column: 1 / -1;
+    font-size: 23px;
+    color: #078daf;
+}
+
+.section {
+    margin-top: 20px;
+    border: 1px solid #bbb;
+}
+
+.section-title {
+    position: relative;
+    background: #e8e8e8;
+    padding: 12px 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    font-size: 18px;
+}
+
+.section-title::before,
+.section-title::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 35px;
+    height: 100%;
+    background: #08a4cb;
+}
+
+.section-title::before {
+    right: 0;
+    border-radius: 18px 0 0 18px;
+}
+
+.section-title::after {
+    left: 0;
+    border-radius: 0 18px 18px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+td {
+    border: 1px dashed #aaa;
+    padding: 10px 8px;
+    font-size: 13px;
+    line-height: 1.7;
+    text-align: center;
+    vertical-align: middle;
+    overflow-wrap: anywhere;
+}
+
+.label {
+    background: #e5e5e5;
+    font-weight: bold;
+}
+
+.value {
+    font-weight: bold;
+}
+
+.en {
+    direction: ltr;
+    unicode-bidi: isolate;
+}
+
+.red {
+    color: #e8564d;
+    font-weight: bold;
+}
+
+.blue {
+    color: #078daf;
+}
+
+.registration-name {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.business-details {
+    margin-top: 20px;
+    padding: 22px;
+    border: 1px solid #bbb;
+    background: #fafafa;
+    text-align: center;
+}
+
+.business-details h2 {
+    margin: 0 0 8px;
+    font-size: 26px;
+}
+
+.business-details h3 {
+    margin: 0;
+    color: #666;
+    font-size: 16px;
+}
+
+.business-description {
+    margin-top: 16px;
+    font-size: 14px;
+    line-height: 2.2;
+}
+
+.document-note {
+    margin-top: 20px;
+    border: 1px dashed #aaa;
+    padding: 14px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.footer-space {
+    height: 160px;
+}
+
+.footer {
+    margin-top: 15px;
+    border: 1px dashed #777;
+    padding: 12px;
+    text-align: center;
+}
+
+.footer-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footer-contact {
+    margin-top: 8px;
+    font-size: 12px;
+}
+
+.print-button {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 12px 20px;
+    background: #123944;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+@media (max-width: 700px) {
+    .page {
+        margin: 0;
+        padding: 10px;
+        min-height: auto;
+    }
+
+    .header {
+        grid-template-columns: 1fr;
+    }
+
+    .header-left,
+    .header-right {
+        text-align: center;
+    }
+
+    .brand {
+        font-size: 24px;
+    }
+
+    .activities-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .activity.primary {
+        grid-column: auto;
+    }
+
+    .section-title {
+        padding: 10px 40px;
+        font-size: 13px;
+    }
+
+    td {
+        font-size: 10px;
+        padding: 6px 4px;
+    }
+
+    .footer-space {
+        height: 70px;
+    }
+}
+
+@media print {
+    body {
+        background: white;
+    }
+
+    .page {
+        margin: 0;
+        max-width: none;
+        min-height: auto;
+        box-shadow: none;
+    }
+
+    .print-button {
+        display: none;
+    }
+
+    .section,
+    .activities,
+    .business-details {
+        break-inside: avoid;
+    }
+}
+</style>
 </head>
+
 <body>
-  <main class="wrap">
-    <section class="hero">
-      <h1 class="brand">سوقك السودان</h1>
-      <div class="en">Sougk alsudan</div>
-      <div class="tag">خدمات الترويج والتسويق على المواقع الإلكترونية ووسائل التواصل الاجتماعي</div>
-      <p style="margin-top:18px">الصفحة الرسمية لعرض معلومات النشاط التجاري وبيانات التواصل والترخيص.</p>
+
+<div class="page">
+
+    <!-- اسم النشاط الأول -->
+
+    <header class="header">
+
+        <div class="header-left">
+            <b>شهادة ترخيص الأنشطة الاقتصادية</b>
+            <div>Economic Activities License Certificate</div>
+        </div>
+
+        <div class="header-center">
+            <div class="brand">
+                <span class="brand-icon">▥▥</span>
+                مؤسسة سوقك
+            </div>
+            <div class="brand-en">Sougk llc</div>
+        </div>
+
+        <div class="header-right">
+            <b>الجمهورية اليمنية</b>
+            <div>Republic of Yemen</div>
+            <div>وزارة الصناعة والتجارة</div>
+            <div>Ministry of Industry &amp; Trade</div>
+        </div>
+
+    </header>
+
+    <!-- اسم النشاط الثاني -->
+
+    <div class="company-banner">
+        <h1>مؤسسة سوقك</h1>
+        <p>Sougk llc</p>
+    </div>
+
+    <!-- أسماء النشاط -->
+
+    <section class="activities">
+
+        <div class="activities-title">
+            أسماء النشاط والخدمات | Business Activities
+        </div>
+
+        <div class="activities-grid">
+
+            <!-- اسم النشاط الثالث -->
+
+            <div class="activity primary">
+                مؤسسة سوقك
+            </div>
+
+            <div class="activity">
+                سوقك للخدمات الرقمية
+            </div>
+
+            <div class="activity">
+                سوقك للتسويق الإلكتروني
+            </div>
+
+            <div class="activity">
+                سوقك للتجارة الإلكترونية
+            </div>
+
+            <div class="activity">
+                سوقك للإعلانات الرقمية
+            </div>
+
+            <div class="activity">
+                سوقك للترويج الإلكتروني
+            </div>
+
+            <div class="activity">
+                منصة سوقك للأعمال
+            </div>
+
+            <div class="activity">
+                سوقك للبيع والشراء
+            </div>
+
+            <div class="activity">
+                سوقك للتسوق الرقمي
+            </div>
+
+            <div class="activity">
+                سوقك لخدمات الأعمال
+            </div>
+
+            <div class="activity">
+                سوقك للخدمات الإلكترونية
+            </div>
+
+            <div class="activity">
+                بوابة سوقك الرقمية
+            </div>
+
+        </div>
+
     </section>
 
-    <section class="grid">
-      <div class="card">
-        <h2>بيانات السجل التجاري</h2>
-        <div class="row"><span class="label">اسم السجل التجاري:</span> سوقك السودان</div>
-        <div class="row"><span class="label">Registration Name:</span> Sougk alsudan</div>
-        <div class="row"><span class="label">رقم السجل التجاري:</span> 1833117</div>
-        <div class="row"><span class="label">حالة السجل:</span> نشط - Active</div>
-        <div class="row"><span class="label">تاريخ التسجيل:</span> 2022/08/20</div>
-        <div class="row"><span class="label">تاريخ الانتهاء:</span> 11/12/2028</div>
-      </div>
+    <!-- بيانات السجل التجاري -->
 
-      <div class="card">
-        <h2>بيانات الترخيص</h2>
-        <div class="row"><span class="label">رقم الترخيص:</span> L2777445</div>
-        <div class="row"><span class="label">اسم الترخيص:</span> خدمات الترويج والتسويق على المواقع الإلكترونية ووسائل التواصل الاجتماعي (البلديات)</div>
-        <div class="row"><span class="label">License Definition:</span> LD-1673</div>
-        <div class="row"><span class="label">الجهة المرخصة:</span> وزارة التجارة والصناعة وترويج الاستثمار - تراخيص التجارة الإلكترونية</div>
-      </div>
+    <section class="section">
 
-      <div class="card">
-        <h2>معلومات الاتصال</h2>
-        <div class="row"><span class="label">رقم الجوال:</span> <a href="tel:+966570384562">+966570384562</a></div>
-        <div class="row"><span class="label">البريد الإلكتروني:</span> <a href="mailto:t@sougks.github.io">t@sougks.github.io</a></div>
-        <div class="row"><span class="label">الموقع الإلكتروني:</span> sougks.github.io</div>
-      </div>
+        <div class="section-title">
+            <b>بيانات السجل التجاري</b>
+            <span class="en">Commercial Registration Information</span>
+        </div>
 
-      <div class="card">
-        <h2>العنوان</h2>
-        <div class="row">طريق الملك فهد، شارع العليا، الرياض 12234، المملكة العربية السعودية</div>
-        <div class="row en">King Fahd Road, Olaya Street, Riyadh, 12234, Saudi Arabia</div>
-      </div>
+        <table>
+
+            <tr>
+                <td class="label">رقم السجل التجاري</td>
+                <td class="value" colspan="2">183310788</td>
+                <td class="label en">Registration Number</td>
+            </tr>
+
+            <tr>
+                <td class="label">اسم السجل التجاري</td>
+
+                <!-- اسم النشاط الرابع -->
+
+                <td class="registration-name">
+                    مؤسسة سوقك
+                </td>
+
+                <td class="value en">
+                    Sougk llc
+                </td>
+
+                <td class="label en">Registration Name</td>
+            </tr>
+
+            <tr>
+                <td class="label">الشكل القانوني</td>
+                <td>من الشركات الكبرى</td>
+                <td class="en">From major companies</td>
+                <td class="label en">Legal Type</td>
+            </tr>
+
+            <tr>
+                <td class="label">تاريخ التسجيل</td>
+                <td class="en">2022/08/20</td>
+                <td class="red">نشط - Active</td>
+                <td class="label en">Registration Status</td>
+            </tr>
+
+            <tr>
+                <td class="label">تاريخ الانتهاء</td>
+                <td class="en">11/12/2028</td>
+                <td class="red">نعم - Yes</td>
+                <td class="label en">Foreign Investment</td>
+            </tr>
+
+        </table>
+
     </section>
 
-    <footer>© 2026 سوقك السودان — Sougk alsudan</footer>
-  </main>
+    <!-- معلومات الاتصال -->
+
+    <section class="section">
+
+        <div class="section-title">
+            <b>معلومات الاتصال</b>
+            <span class="en">Contact Information</span>
+        </div>
+
+        <table>
+
+            <tr>
+                <td class="label">رمز الفرع</td>
+                <td></td>
+                <td class="label">تاريخ التسجيل</td>
+                <td class="en">2022/08/20</td>
+            </tr>
+
+            <tr>
+                <td class="label">رقم الجوال</td>
+                <td class="value en">+966502920655</td>
+                <td class="label">فترة الصلاحية</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td class="label">البريد الإلكتروني</td>
+                <td class="en">Otp@sm9a.github.io</td>
+                <td class="label en">Email</td>
+                <td class="en">Otp@sm9a.github.io</td>
+            </tr>
+
+            <tr>
+                <td class="label">الموقع الإلكتروني</td>
+                <td class="en blue">sm9a.github.io</td>
+                <td class="label en">Website</td>
+                <td class="en blue">sm9a.github.io</td>
+            </tr>
+
+            <tr>
+                <td class="label">العنوان</td>
+                <td colspan="2">
+                    طريق الملك فهد، شارع العليا،
+                    الرياض، 12214، المملكة العربية السعودية
+                    <div class="en">
+                        King Fahd Road, Olaya Street,
+                        Riyadh, 12214, Saudi Arabia
+                    </div>
+                </td>
+                <td class="label en">Address</td>
+            </tr>
+
+            <tr>
+                <td class="label">الإحداثيات</td>
+                <td></td>
+                <td></td>
+                <td class="label en">GPS Coordinates</td>
+            </tr>
+
+        </table>
+
+    </section>
+
+    <!-- بيانات الترخيص -->
+
+    <section class="section">
+
+        <div class="section-title">
+            <b>بيانات الترخيص</b>
+            <span class="en">License Information</span>
+        </div>
+
+        <table>
+
+            <tr>
+                <td class="label">رقم الترخيص</td>
+                <td class="value en" colspan="2">L277787588</td>
+                <td class="label en">License Number</td>
+            </tr>
+
+            <tr>
+                <td class="label">اسم الترخيص</td>
+                <td colspan="2">
+                    خدمات الترويج والتسويق على المواقع الإلكترونية
+                    ووسائل التواصل الاجتماعي (البلديات)
+
+                    <div class="en">
+                        Marketing and Promotion Services
+                        on Social Media (Municipalities)
+                    </div>
+                </td>
+                <td class="label en">License Name</td>
+            </tr>
+
+            <tr>
+                <td class="label">الإصدار الأول</td>
+                <td class="en">25/06/2024</td>
+                <td>12 شهر / Months</td>
+                <td class="label en">Period</td>
+            </tr>
+
+            <tr>
+                <td class="label">تاريخ الإصدار</td>
+                <td class="en">2022/08/20</td>
+                <td class="en">11/12/2028</td>
+                <td class="label en">Expiry Date</td>
+            </tr>
+
+            <tr>
+                <td class="label">تعريف الترخيص</td>
+                <td class="value en">LD-1673</td>
+                <td></td>
+                <td class="label en">License Status</td>
+            </tr>
+
+            <tr>
+                <td class="label">الجهة المرخصة</td>
+                <td colspan="2">
+                    تراخيص التجارة الإلكترونية -
+                    وزارة التجارة والصناعة وترويج الاستثمار
+
+                    <div class="en">
+                        Ministry of Commerce Industry and
+                        Investment Promotion - E-Commerce Licenses
+                    </div>
+                </td>
+                <td class="label en">Issued By</td>
+            </tr>
+
+            <tr>
+                <td class="label">الجهات</td>
+                <td colspan="2"></td>
+                <td class="label en">Approvers By</td>
+            </tr>
+
+        </table>
+
+    </section>
+
+    <!-- معلومات إضافية -->
+
+    <section class="business-details">
+
+        <h2>خدمات وأعمال سوقك</h2>
+        <h3>Sougk Digital Services</h3>
+
+        <div class="business-description">
+            التسويق الإلكتروني •
+            الترويج الرقمي •
+            الإعلانات الإلكترونية •
+            التجارة الإلكترونية •
+            الخدمات الرقمية •
+            البيع والشراء •
+            خدمات الأعمال •
+            الحلول الرقمية
+        </div>
+
+    </section>
+
+    <div class="document-note">
+        بيانات النشاط والسجل والترخيص وفق المعلومات المعروضة في المستند المرجعي.
+        <div class="en">
+            Business and registration details reproduced
+            from the supplied reference document.
+        </div>
+    </div>
+
+    <div class="footer-space"></div>
+
+    <table>
+        <tr>
+            <td class="en">Page 1 of 1</td>
+            <td class="en">Printed by:</td>
+            <td class="en">2022/08/20</td>
+            <td>صفحة 1 من 1</td>
+        </tr>
+    </table>
+
+    <!-- اسم النشاط الخامس -->
+
+    <footer class="footer">
+
+        <div class="footer-name">
+            مؤسسة سوقك
+        </div>
+
+        <div class="footer-contact en">
+            Sougk llc |
+            Call Centre +966502920655 |
+            Otp@sm9a.github.io |
+            sm9a.github.io
+        </div>
+
+    </footer>
+
+</div>
+
+<button class="print-button" onclick="window.print()">
+    طباعة / Print
+</button>
+
 </body>
 </html>
