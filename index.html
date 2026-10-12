@@ -1,1 +1,688 @@
-yny
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>شركة سوقك | Sougk Company</title>
+
+<meta name="description" content="شركة سوقك، شركة متخصصة في الخدمات الرقمية والتسويق الإلكتروني والإعلانات والتجارة الإلكترونية وحلول الأعمال.">
+<meta name="keywords" content="سوقك, شركة سوقك, سوقك السودان, منصة سوقك الرقمية, تطبيق سوقك, التجارة الإلكترونية, الخدمات الرقمية">
+<meta name="application-name" content="سوقك">
+
+<meta name="facebook-domain-verification" content="8v333ecjhlqzab9a3hf2ybv5k4hdqg" />
+
+<style>
+:root {
+    --primary: #126b78;
+    --dark: #18313b;
+    --light: #f4f7f8;
+    --border: #e2e9ec;
+    --text: #34454d;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Tahoma, Arial, sans-serif;
+    color: var(--text);
+    background: #ffffff;
+    line-height: 1.9;
+}
+
+.container {
+    width: min(1120px, 92%);
+    margin: auto;
+}
+
+header {
+    background: #fff;
+    border-bottom: 1px solid var(--border);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 0;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.logo span {
+    display: block;
+    font-size: 12px;
+    color: #78878d;
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--dark);
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: var(--primary);
+}
+
+.hero {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #f1f7f8, #ffffff);
+}
+
+.hero-content {
+    max-width: 740px;
+}
+
+.eyebrow {
+    color: var(--primary);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    color: var(--dark);
+    font-size: clamp(32px, 5vw, 52px);
+    line-height: 1.4;
+    margin: 12px 0 20px;
+}
+
+.hero p {
+    font-size: 17px;
+    color: #607179;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--primary);
+    color: white;
+    padding: 12px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.btn:hover {
+    background: #0c5360;
+}
+
+section {
+    padding: 75px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title h2 {
+    font-size: 30px;
+    color: var(--dark);
+    margin: 0 0 10px;
+}
+
+.section-title p {
+    color: #78878d;
+    margin: 0;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+    align-items: center;
+}
+
+.about h2 {
+    font-size: 30px;
+    color: var(--dark);
+}
+
+.about p {
+    color: #64747b;
+}
+
+.about-panel {
+    background: var(--light);
+    padding: 35px;
+    border-radius: 10px;
+    border-right: 4px solid var(--primary);
+}
+
+.about-panel h3 {
+    color: var(--primary);
+    margin-top: 0;
+}
+
+.services {
+    background: #f7f9fa;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.service-card {
+    background: white;
+    padding: 30px 25px;
+    border: 1px solid var(--border);
+    border-radius: 9px;
+    transition: 0.2s;
+}
+
+.service-card:hover {
+    border-color: var(--primary);
+    transform: translateY(-3px);
+}
+
+.service-number {
+    color: var(--primary);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.service-card h3 {
+    color: var(--dark);
+    font-size: 19px;
+    margin: 12px 0;
+}
+
+.service-card p {
+    color: #738189;
+    font-size: 14px;
+    margin: 0;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.why-item {
+    padding: 25px;
+    border-right: 3px solid var(--primary);
+    background: #fafbfc;
+}
+
+.why-item h3 {
+    margin-top: 0;
+    color: var(--dark);
+}
+
+.why-item p {
+    font-size: 14px;
+    color: #738189;
+}
+
+.cta {
+    background: var(--dark);
+    color: white;
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 32px;
+    margin-top: 0;
+}
+
+.cta p {
+    color: #c8d4d9;
+    max-width: 650px;
+    margin: 0 auto 25px;
+}
+
+.cta .btn {
+    background: white;
+    color: var(--dark);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+}
+
+.contact-box {
+    background: var(--light);
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.contact-box h3 {
+    color: var(--dark);
+    margin-top: 0;
+}
+
+.contact-box a {
+    color: var(--primary);
+    text-decoration: none;
+    overflow-wrap: anywhere;
+}
+
+footer {
+    background: #142830;
+    color: #d2dcdf;
+    padding: 45px 0 20px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 35px;
+}
+
+.footer-logo {
+    font-size: 28px;
+    color: white;
+    font-weight: bold;
+}
+
+footer p {
+    font-size: 13px;
+    color: #aab9bf;
+}
+
+footer h3 {
+    color: white;
+    font-size: 16px;
+}
+
+footer a {
+    display: block;
+    color: #c5d0d4;
+    text-decoration: none;
+    font-size: 13px;
+    margin: 8px 0;
+}
+
+.copyright {
+    border-top: 1px solid #34505b;
+    margin-top: 35px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 12px;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        padding: 65px 0;
+    }
+
+    .about-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .services-grid,
+    .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 520px) {
+    .services-grid,
+    .why-grid {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 50px 0;
+    }
+
+    .section-title h2 {
+        font-size: 25px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="container navbar">
+
+        <a href="#" class="logo">
+            سوقك
+            <span>SOUGK COMPANY</span>
+        </a>
+
+        <nav>
+            <a href="#home">الرئيسية</a>
+            <a href="#about">من نحن</a>
+            <a href="#services">خدماتنا</a>
+            <a href="#why">لماذا سوقك؟</a>
+            <a href="#contact">اتصل بنا</a>
+        </nav>
+
+    </div>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+    <div class="container">
+        <div class="hero-content">
+
+            <div class="eyebrow">
+                شركة سوقك للخدمات والحلول الرقمية
+            </div>
+
+            <h1>
+                سوقك شريكك في تطوير
+                أعمالك الرقمية
+            </h1>
+
+            <p>
+                في سوقك نعمل على تقديم خدمات وحلول رقمية
+                تساعد الأفراد وأصحاب المشاريع والشركات
+                على عرض منتجاتهم وخدماتهم والوصول
+                إلى جمهور أوسع بطرق سهلة وعملية.
+            </p>
+
+            <a href="#services" class="btn">
+                اكتشف خدماتنا
+            </a>
+
+        </div>
+    </div>
+</section>
+
+<section class="about" id="about">
+    <div class="container">
+
+        <div class="about-grid">
+
+            <div>
+                <span class="eyebrow">من نحن</span>
+
+                <h2>نبذة عن شركة سوقك</h2>
+
+                <p>
+                    سوقك مشروع رقمي يركز على تطوير
+                    حلول حديثة للتجارة الإلكترونية
+                    والتسويق والإعلانات والخدمات الرقمية.
+                </p>
+
+                <p>
+                    نسعى إلى تسهيل التواصل بين
+                    أصحاب الأعمال والعملاء،
+                    وتوفير بيئة رقمية تساعد على
+                    عرض المنتجات والخدمات
+                    بطريقة منظمة وسهلة الاستخدام.
+                </p>
+
+                <p>
+                    نؤمن بأن التحول الرقمي يفتح
+                    فرصاً جديدة لنمو المشاريع،
+                    ولهذا نعمل على تطوير خدمات
+                    تلبي احتياجات السوق.
+                </p>
+            </div>
+
+            <div class="about-panel">
+
+                <h3>رؤيتنا</h3>
+
+                <p>
+                    أن تصبح سوقك منصة رقمية
+                    موثوقة تسهل ممارسة الأعمال
+                    والتجارة والتسويق.
+                </p>
+
+                <h3>رسالتنا</h3>
+
+                <p>
+                    تقديم حلول رقمية عملية
+                    تساعد المشاريع على النمو
+                    والوصول إلى العملاء.
+                </p>
+
+                <h3>قيمنا</h3>
+
+                <p>
+                    البساطة، التطوير المستمر،
+                    الوضوح، جودة الخدمة
+                    والاهتمام بتجربة المستخدم.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="services" id="services">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>خدمات شركة سوقك</h2>
+            <p>حلول رقمية لدعم الأعمال والمشاريع</p>
+        </div>
+
+        <div class="services-grid">
+
+            <div class="service-card">
+                <div class="service-number">01</div>
+                <h3>التجارة الإلكترونية</h3>
+                <p>
+                    حلول تساعد أصحاب المشاريع
+                    على عرض المنتجات والخدمات
+                    والوصول إلى العملاء عبر الإنترنت.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-number">02</div>
+                <h3>التسويق الرقمي</h3>
+                <p>
+                    تطوير أساليب التسويق
+                    الإلكتروني لتعزيز ظهور
+                    الأنشطة التجارية.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-number">03</div>
+                <h3>الإعلانات الإلكترونية</h3>
+                <p>
+                    توفير حلول إعلانية
+                    تساعد على التعريف
+                    بالمنتجات والخدمات.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-number">04</div>
+                <h3>المنصات الرقمية</h3>
+                <p>
+                    تطوير أدوات ومنصات
+                    تساعد على إدارة
+                    الأنشطة والخدمات الإلكترونية.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-number">05</div>
+                <h3>خدمات الأعمال</h3>
+                <p>
+                    حلول رقمية تساعد
+                    المؤسسات وأصحاب المشاريع
+                    على تنظيم أعمالهم.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-number">06</div>
+                <h3>الترويج الإلكتروني</h3>
+                <p>
+                    دعم انتشار العلامات
+                    التجارية وتعريف الجمهور
+                    بالخدمات والمنتجات.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section id="why">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>لماذا تختار سوقك؟</h2>
+            <p>نعمل على جعل الخدمات الرقمية أكثر بساطة</p>
+        </div>
+
+        <div class="why-grid">
+
+            <div class="why-item">
+                <h3>سهولة الاستخدام</h3>
+                <p>
+                    نهتم بتقديم تجربة بسيطة
+                    وواضحة تناسب مختلف المستخدمين.
+                </p>
+            </div>
+
+            <div class="why-item">
+                <h3>حلول عملية</h3>
+                <p>
+                    نركز على الخدمات التي
+                    تلبي الاحتياجات الفعلية للأعمال.
+                </p>
+            </div>
+
+            <div class="why-item">
+                <h3>التطوير المستمر</h3>
+                <p>
+                    نعمل على تحسين خدماتنا
+                    وتطوير حلولنا الرقمية.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="cta">
+    <div class="container">
+
+        <h2>ابدأ رحلتك الرقمية مع سوقك</h2>
+
+        <p>
+            اكتشف كيف يمكن للخدمات الرقمية
+            أن تساعدك في تطوير مشروعك
+            والوصول إلى فرص جديدة.
+        </p>
+
+        <a href="#contact" class="btn">
+            تواصل معنا
+        </a>
+
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>تواصل مع سوقك</h2>
+            <p>نسعد باستفساراتكم واقتراحاتكم</p>
+        </div>
+
+        <div class="contact-grid">
+
+            <div class="contact-box">
+
+                <h3>شركة سوقك</h3>
+
+                <p>
+                    الاسم التجاري المستخدم بالموقع:
+                    <strong>سوقك</strong>
+                </p>
+
+                <p>
+                    الاسم باللغة الإنجليزية:
+                    <strong>Sougk</strong>
+                </p>
+
+                <p>
+                    مجال العمل:
+                    الخدمات الرقمية والتجارة الإلكترونية
+                    والتسويق الإلكتروني.
+                </p>
+
+            </div>
+
+            <div class="contact-box">
+
+                <h3>قنوات التواصل</h3>
+
+                <p>
+                    الموقع الإلكتروني:
+                    <a href="https://sougk.com">
+                        sougk.com
+                    </a>
+                </p>
+
+                <p>
+                    تطبيق سوقك:
+                    <a href="https://play.google.com/store/apps/details?id=com.sougk.sd"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        تحميل التطبيق من Google Play
+                    </a>
+                </p>
+
+                <p>
+                    للاستفسارات يمكن التواصل
+                    عبر القنوات الرسمية المعلنة
+                    داخل التطبيق.
+                </p>
+
+            </div>
+
+        </div>
+
+    </
